@@ -11,7 +11,7 @@ class RetrofitClient {
     {
     fun getClient(baseUrl:String):Retrofit{
         return Retrofit.Builder()
-            .baseUrl(baseUrl) //base url belirledik http://grgnpl.com adresi
+            .baseUrl(baseUrl) //base url belirledik
             .addConverterFactory(GsonConverterFactory.create()) // json parse ediliyor
             .build()
     }

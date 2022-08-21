@@ -24,7 +24,7 @@ interface MyApi {
     companion object {
         operator fun invoke(): MyApi {
             return Retrofit.Builder()
-                .baseUrl("http://grgnpl.com/ImageUploader/")
+                .baseUrl("/ImageUploader/") // Adresiniz
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(MyApi::class.java)
